@@ -13,25 +13,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="627ccebc-b342-4b0b-99a0-a4882a095bed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/game_dev_experiments.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/retro_gaming.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bouncing_balls.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/geometry/ball.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/geometry/mod.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/geometry/vector2d.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/geometry/velocity.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/simple_balls.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/entity.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/fps_counter.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/game_window.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/mod.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/scene.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +32,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="pcw76y97" />
@@ -78,6 +61,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
     <property name="settings.editor.selected.configurable" value="language.rust.rustfmt" />
   </component>
@@ -139,8 +123,16 @@
       <option name="presentableId" value="Default" />
       <updated>1603880305650</updated>
       <workItem from="1603880307011" duration="7633000" />
-      <workItem from="1603889831642" duration="22783000" />
+      <workItem from="1603889831642" duration="23069000" />
     </task>
+    <task id="LOCAL-00001" summary="added simple and bouncing ball experiment">
+      <created>1603972443261</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603972443261</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,16 +140,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="added simple and bouncing ball experiment" />
+    <option name="LAST_COMMIT_MESSAGE" value="added simple and bouncing ball experiment" />
   </component>
   <component name="WindowStateProjectService">
     <state x="424" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603963338442">
       <screen x="0" y="23" width="1920" height="992" />
     </state>
     <state x="424" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1603963338442" />
-    <state x="683" y="328" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603895156331">
+    <state x="683" y="328" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603972541551">
       <screen x="0" y="23" width="1920" height="992" />
     </state>
-    <state x="683" y="328" key="#com.intellij.fileTypes.FileTypeChooser/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1603895156331" />
+    <state x="683" y="328" key="#com.intellij.fileTypes.FileTypeChooser/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1603972541551" />
     <state x="773" y="242" key="#com.intellij.ide.util.MemberChooser" timestamp="1603970289868">
       <screen x="0" y="23" width="1920" height="992" />
     </state>
@@ -166,6 +160,10 @@
       <screen x="0" y="23" width="1920" height="992" />
     </state>
     <state x="698" y="273" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1603965132557" />
+    <state x="304" y="65" width="1163" height="849" key="CommitChangelistDialog2" timestamp="1603972443040">
+      <screen x="0" y="23" width="1920" height="992" />
+    </state>
+    <state x="304" y="65" width="1163" height="849" key="CommitChangelistDialog2/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1603972443040" />
     <state width="1878" height="269" key="GridCell.Tab.0.bottom" timestamp="1603971246196">
       <screen x="0" y="23" width="1920" height="992" />
     </state>
@@ -186,9 +184,17 @@
       <screen x="0" y="23" width="1920" height="992" />
     </state>
     <state x="469" y="158" key="SettingsEditor/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1603970842303" />
+    <state x="560" y="246" key="Vcs.Push.Dialog.v2" timestamp="1603972445990">
+      <screen x="0" y="23" width="1920" height="992" />
+    </state>
+    <state x="560" y="246" key="Vcs.Push.Dialog.v2/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1603972445990" />
     <state x="773" y="440" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603888125165">
       <screen x="0" y="23" width="1920" height="992" />
     </state>
     <state x="773" y="440" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1603888125165" />
+    <state x="782" y="420" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1603972313219">
+      <screen x="0" y="23" width="1920" height="992" />
+    </state>
+    <state x="782" y="420" key="git4idea.remote.GitConfigureRemotesDialog/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1603972313219" />
   </component>
 </project>
