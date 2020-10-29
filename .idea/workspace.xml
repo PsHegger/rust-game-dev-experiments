@@ -12,8 +12,10 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="627ccebc-b342-4b0b-99a0-a4882a095bed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+    <list default="true" id="627ccebc-b342-4b0b-99a0-a4882a095bed" name="Default Changelist" comment="added readme">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +125,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603880305650</updated>
       <workItem from="1603880307011" duration="7633000" />
-      <workItem from="1603889831642" duration="23069000" />
+      <workItem from="1603889831642" duration="23527000" />
     </task>
     <task id="LOCAL-00001" summary="added simple and bouncing ball experiment">
       <created>1603972443261</created>
@@ -132,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603972443261</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="create LICENSE">
+      <created>1603972563405</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603972563405</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,7 +150,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="added simple and bouncing ball experiment" />
-    <option name="LAST_COMMIT_MESSAGE" value="added simple and bouncing ball experiment" />
+    <MESSAGE value="create LICENSE" />
+    <option name="LAST_COMMIT_MESSAGE" value="create LICENSE" />
   </component>
   <component name="WindowStateProjectService">
     <state x="424" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603963338442">
@@ -160,10 +170,10 @@
       <screen x="0" y="23" width="1920" height="992" />
     </state>
     <state x="698" y="273" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1603965132557" />
-    <state x="304" y="65" width="1163" height="849" key="CommitChangelistDialog2" timestamp="1603972443040">
+    <state x="304" y="65" width="1163" height="849" key="CommitChangelistDialog2" timestamp="1603972945637">
       <screen x="0" y="23" width="1920" height="992" />
     </state>
-    <state x="304" y="65" width="1163" height="849" key="CommitChangelistDialog2/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1603972443040" />
+    <state x="304" y="65" width="1163" height="849" key="CommitChangelistDialog2/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1603972945637" />
     <state width="1878" height="269" key="GridCell.Tab.0.bottom" timestamp="1603971246196">
       <screen x="0" y="23" width="1920" height="992" />
     </state>
@@ -184,10 +194,10 @@
       <screen x="0" y="23" width="1920" height="992" />
     </state>
     <state x="469" y="158" key="SettingsEditor/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1603970842303" />
-    <state x="560" y="246" key="Vcs.Push.Dialog.v2" timestamp="1603972445990">
+    <state x="560" y="246" key="Vcs.Push.Dialog.v2" timestamp="1603972564747">
       <screen x="0" y="23" width="1920" height="992" />
     </state>
-    <state x="560" y="246" key="Vcs.Push.Dialog.v2/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1603972445990" />
+    <state x="560" y="246" key="Vcs.Push.Dialog.v2/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1603972564747" />
     <state x="773" y="440" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603888125165">
       <screen x="0" y="23" width="1920" height="992" />
     </state>
