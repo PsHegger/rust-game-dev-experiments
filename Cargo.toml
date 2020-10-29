@@ -1,0 +1,20 @@
+[package]
+name = "game_dev_experiments"
+version = "0.1.0"
+authors = [
+    "pshegger <pshegger@gmail.com>"
+]
+
+[[bin]]
+name = "simple_balls"
+path = "src/simple_balls.rs"
+
+[[bin]]
+name = "bouncing_balls"
+path = "src/bouncing_balls.rs"
+
+[dependencies]
+piston_window = "0.112.0"
+piston = "0.52.0"
+rand = "0.7.3"
+find_folder = "0.3.0"
