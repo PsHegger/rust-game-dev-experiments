@@ -17,6 +17,10 @@ path = "src/bouncing_balls.rs"
 name = "sprite_sheet"
 path = "src/sprite_sheet.rs"
 
+[[bin]]
+name = "sprite_animation"
+path = "src/sprite_animation.rs"
+
 [dependencies]
 piston_window = "0.112.0"
 piston = "0.52.0"

@@ -112,7 +112,7 @@ fn main() {
         .build()
         .unwrap();
 
-    // sprites from Kenney, find out more at https://kenney.nl/
+    // assets from Kenney, find out more at https://kenney.nl/
     let sheet = SpriteSheet::new(
         "assets",
         "sprites.xml",
