@@ -31,10 +31,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="627ccebc-b342-4b0b-99a0-a4882a095bed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/sprite_animation.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sprite_sheet.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/sprite_sheet.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sprite_animation.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/sprite_animation.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +174,7 @@
       <workItem from="1603880307011" duration="7633000" />
       <workItem from="1603889831642" duration="24764000" />
       <workItem from="1604046769962" duration="7640000" />
-      <workItem from="1604129213529" duration="7748000" />
+      <workItem from="1604129213529" duration="8605000" />
     </task>
     <task id="LOCAL-00001" summary="added simple and bouncing ball experiment">
       <created>1603972443261</created>
@@ -213,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604134088529</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added a simple walking animation using sprites">
+      <created>1604138201519</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1604138201520</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,7 +242,8 @@
     <MESSAGE value="added readme" />
     <MESSAGE value="added support for texture atlases" />
     <MESSAGE value="fix: typo" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: typo" />
+    <MESSAGE value="added a simple walking animation using sprites" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a simple walking animation using sprites" />
   </component>
   <component name="WindowStateProjectService">
     <state x="424" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604134621866">
@@ -256,10 +262,10 @@
       <screen x="0" y="23" width="1920" height="992" />
     </state>
     <state x="698" y="273" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1604053309736" />
-    <state x="304" y="65" width="1163" height="849" key="CommitChangelistDialog2" timestamp="1604134088407">
+    <state x="304" y="65" width="1163" height="849" key="CommitChangelistDialog2" timestamp="1604138201358">
       <screen x="0" y="23" width="1920" height="992" />
     </state>
-    <state x="304" y="65" width="1163" height="849" key="CommitChangelistDialog2/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1604134088407" />
+    <state x="304" y="65" width="1163" height="849" key="CommitChangelistDialog2/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1604138201358" />
     <state x="100" y="123" width="1720" height="792" key="DiffContextDialog" timestamp="1604134258904">
       <screen x="0" y="23" width="1920" height="992" />
     </state>
@@ -268,30 +274,30 @@
       <screen x="0" y="23" width="1920" height="992" />
     </state>
     <state x="460" y="209" key="Git.Interactive.Rebase.Dialog/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1604134099068" />
-    <state width="1878" height="269" key="GridCell.Tab.0.bottom" timestamp="1604138079414">
+    <state width="1878" height="269" key="GridCell.Tab.0.bottom" timestamp="1604138962090">
       <screen x="0" y="23" width="1920" height="992" />
     </state>
-    <state width="1878" height="269" key="GridCell.Tab.0.bottom/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1604138079414" />
-    <state width="1878" height="269" key="GridCell.Tab.0.center" timestamp="1604138079413">
+    <state width="1878" height="269" key="GridCell.Tab.0.bottom/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1604138962090" />
+    <state width="1878" height="269" key="GridCell.Tab.0.center" timestamp="1604138962089">
       <screen x="0" y="23" width="1920" height="992" />
     </state>
-    <state width="1878" height="269" key="GridCell.Tab.0.center/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1604138079413" />
-    <state width="1878" height="269" key="GridCell.Tab.0.left" timestamp="1604138079413">
+    <state width="1878" height="269" key="GridCell.Tab.0.center/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1604138962089" />
+    <state width="1878" height="269" key="GridCell.Tab.0.left" timestamp="1604138962088">
       <screen x="0" y="23" width="1920" height="992" />
     </state>
-    <state width="1878" height="269" key="GridCell.Tab.0.left/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1604138079413" />
-    <state width="1878" height="269" key="GridCell.Tab.0.right" timestamp="1604138079414">
+    <state width="1878" height="269" key="GridCell.Tab.0.left/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1604138962088" />
+    <state width="1878" height="269" key="GridCell.Tab.0.right" timestamp="1604138962090">
       <screen x="0" y="23" width="1920" height="992" />
     </state>
-    <state width="1878" height="269" key="GridCell.Tab.0.right/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1604138079414" />
+    <state width="1878" height="269" key="GridCell.Tab.0.right/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1604138962090" />
     <state x="469" y="158" key="SettingsEditor" timestamp="1603970842303">
       <screen x="0" y="23" width="1920" height="992" />
     </state>
     <state x="469" y="158" key="SettingsEditor/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1603970842303" />
-    <state x="560" y="246" key="Vcs.Push.Dialog.v2" timestamp="1603973031972">
+    <state x="560" y="246" key="Vcs.Push.Dialog.v2" timestamp="1604138203037">
       <screen x="0" y="23" width="1920" height="992" />
     </state>
-    <state x="560" y="246" key="Vcs.Push.Dialog.v2/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1603973031972" />
+    <state x="560" y="246" key="Vcs.Push.Dialog.v2/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1604138203037" />
     <state x="773" y="440" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603888125165">
       <screen x="0" y="23" width="1920" height="992" />
     </state>

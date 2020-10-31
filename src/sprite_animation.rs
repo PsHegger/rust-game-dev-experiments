@@ -65,6 +65,7 @@ impl SpriteAnimationApp {
 
 impl Scene for SpriteAnimationApp {
     fn render(self, c: Context, g: &mut G2d) {
+        let w = self.width as f64;
         let h = self.height as f64;
 
         clear(BACKGROUND, g);
@@ -76,6 +77,14 @@ impl Scene for SpriteAnimationApp {
             c,
             g,
         );
+        if self.plant_x < 0.0 {
+            self.sprite_sheet.render_sprite(
+                &"plantGreen_3.png".to_string(),
+                [w + self.plant_x, h - 95.0],
+                c,
+                g,
+            );
+        }
         self.sprite_sheet
             .render_sprite(&"tileYellow_06.png".to_string(), [64.0, h - 64.0], c, g);
         self.sprite_sheet
@@ -100,7 +109,7 @@ impl Scene for SpriteAnimationApp {
         self.update_player();
         self.plant_x -= SCREEN_MOVE_PER_SECOND * dt;
         if self.plant_x <= -44.0 {
-            self.plant_x = self.width as f64;
+            self.plant_x = self.width as f64 - 44.0;
         }
 
         self.last_update = SystemTime::now();
