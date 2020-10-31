@@ -1,4 +1,3 @@
-use piston::WindowSettings;
 use piston_window::*;
 use utils::fps_counter::FpsCounter;
 use utils::scene::Scene;
@@ -10,10 +9,9 @@ pub struct GameWindow<T: Scene + Clone> {
     scene: T,
 }
 
+#[allow(dead_code)]
 impl<T: Scene + Clone> GameWindow<T> {
-    pub fn new(settings: WindowSettings, scene: T) -> GameWindow<T> {
-        let mut window: PistonWindow = settings.build().unwrap();
-
+    pub fn new(mut window: PistonWindow, scene: T) -> GameWindow<T> {
         let assets = find_folder::Search::ParentsThenKids(3, 3)
             .for_folder("assets")
             .unwrap();

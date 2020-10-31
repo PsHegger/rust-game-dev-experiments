@@ -13,8 +13,14 @@ path = "src/simple_balls.rs"
 name = "bouncing_balls"
 path = "src/bouncing_balls.rs"
 
+[[bin]]
+name = "sprite_sheet"
+path = "src/sprite_sheet.rs"
+
 [dependencies]
 piston_window = "0.112.0"
 piston = "0.52.0"
 rand = "0.7.3"
 find_folder = "0.3.0"
+serde = { version = "1.0.117", features = ["derive"] }
+quick-xml = { version = "0.20.0", features = ["serialize"] }

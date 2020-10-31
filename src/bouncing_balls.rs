@@ -1,6 +1,8 @@
 extern crate piston;
 extern crate piston_window;
+extern crate quick_xml;
 extern crate rand;
+extern crate serde;
 
 mod geometry;
 mod utils;
@@ -80,12 +82,14 @@ impl Scene for BouncingBalls {
 }
 
 fn main() {
-    let window_settings = WindowSettings::new("bouncing-balls", [WIDTH, HEIGHT])
+    let window = WindowSettings::new("bouncing-balls", [WIDTH, HEIGHT])
         .graphics_api(OpenGL::V3_2)
-        .exit_on_esc(true);
+        .exit_on_esc(true)
+        .build()
+        .unwrap();
 
     let app = BouncingBalls::new(WIDTH, HEIGHT);
 
-    let mut window = GameWindow::new(window_settings, app);
-    window.game_loop();
+    let mut game_window = GameWindow::new(window, app);
+    game_window.game_loop();
 }
