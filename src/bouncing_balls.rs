@@ -15,6 +15,7 @@ use std::option::Option::Some;
 use std::time::SystemTime;
 use utils::entity::{Renderable, Updatable};
 use utils::game_window::GameWindow;
+use utils::input::InputHandler;
 use utils::scene::Scene;
 
 const WIDTH: u32 = 1280;
@@ -79,6 +80,10 @@ impl Scene for BouncingBalls {
         self.width = new_width;
         self.height = new_height;
     }
+}
+
+impl InputHandler for BouncingBalls {
+    fn on_button_event(&mut self, _args: ButtonArgs) {}
 }
 
 fn main() {

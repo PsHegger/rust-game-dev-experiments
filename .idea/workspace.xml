@@ -31,8 +31,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="627ccebc-b342-4b0b-99a0-a4882a095bed" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/platformer/constants.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/platformer/game_world.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/platformer/map.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/platformer/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/platformer/player.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/platformer_main.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/input.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bouncing_balls.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/bouncing_balls.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/simple_balls.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/simple_balls.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sprite_animation.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/sprite_animation.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sprite_sheet.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/sprite_sheet.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/game_window.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/game_window.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/sprite_sheet.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/sprite_sheet.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,15 +110,22 @@
       <recent name="$PROJECT_DIR$/assets" />
     </key>
   </component>
-  <component name="RunManager" selected="Cargo.Run - Sprite Animation">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Cargo.Run - Platformer">
     <configuration name="Run - Bouncing Balls" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="run --bin bouncing_balls" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Run - Platformer" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="run --bin platformer" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
@@ -150,11 +171,17 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Cargo.Run - Simple Balls" />
       <item itemvalue="Cargo.Run - Bouncing Balls" />
       <item itemvalue="Cargo.Run - Sprite Sheet" />
       <item itemvalue="Cargo.Run - Sprite Animation" />
+      <item itemvalue="Cargo.Run - Platformer" />
     </list>
   </component>
   <component name="RustProjectSettings">
@@ -174,7 +201,11 @@
       <workItem from="1603880307011" duration="7633000" />
       <workItem from="1603889831642" duration="24764000" />
       <workItem from="1604046769962" duration="7640000" />
-      <workItem from="1604129213529" duration="8605000" />
+      <workItem from="1604129213529" duration="9970000" />
+      <workItem from="1604404669713" duration="6869000" />
+      <workItem from="1604418171586" duration="3400000" />
+      <workItem from="1604911437098" duration="2557000" />
+      <workItem from="1604925609029" duration="19185000" />
     </task>
     <task id="LOCAL-00001" summary="added simple and bouncing ball experiment">
       <created>1603972443261</created>
@@ -218,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604138201520</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added a small tweak for better plant visuals for the animation">
+      <created>1604139078166</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1604139078166</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,6 +272,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -243,29 +282,30 @@
     <MESSAGE value="added support for texture atlases" />
     <MESSAGE value="fix: typo" />
     <MESSAGE value="added a simple walking animation using sprites" />
-    <option name="LAST_COMMIT_MESSAGE" value="added a simple walking animation using sprites" />
+    <MESSAGE value="added a small tweak for better plant visuals for the animation" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a small tweak for better plant visuals for the animation" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="424" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604134621866">
+    <state x="424" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604404909948">
       <screen x="0" y="23" width="1920" height="992" />
     </state>
-    <state x="424" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1604134621866" />
+    <state x="424" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1604404909948" />
     <state x="683" y="328" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604134228024">
       <screen x="0" y="23" width="1920" height="992" />
     </state>
     <state x="683" y="328" key="#com.intellij.fileTypes.FileTypeChooser/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1604134228024" />
-    <state x="773" y="242" key="#com.intellij.ide.util.MemberChooser" timestamp="1604134386858">
+    <state x="773" y="242" key="#com.intellij.ide.util.MemberChooser" timestamp="1604933554440">
       <screen x="0" y="23" width="1920" height="992" />
     </state>
-    <state x="773" y="242" key="#com.intellij.ide.util.MemberChooser/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1604134386858" />
+    <state x="773" y="242" key="#com.intellij.ide.util.MemberChooser/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1604933554440" />
     <state x="698" y="273" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604053309736">
       <screen x="0" y="23" width="1920" height="992" />
     </state>
     <state x="698" y="273" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1604053309736" />
-    <state x="304" y="65" width="1163" height="849" key="CommitChangelistDialog2" timestamp="1604138201358">
+    <state x="304" y="65" width="1163" height="849" key="CommitChangelistDialog2" timestamp="1604139078030">
       <screen x="0" y="23" width="1920" height="992" />
     </state>
-    <state x="304" y="65" width="1163" height="849" key="CommitChangelistDialog2/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1604138201358" />
+    <state x="304" y="65" width="1163" height="849" key="CommitChangelistDialog2/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1604139078030" />
     <state x="100" y="123" width="1720" height="792" key="DiffContextDialog" timestamp="1604134258904">
       <screen x="0" y="23" width="1920" height="992" />
     </state>
@@ -274,30 +314,30 @@
       <screen x="0" y="23" width="1920" height="992" />
     </state>
     <state x="460" y="209" key="Git.Interactive.Rebase.Dialog/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1604134099068" />
-    <state width="1878" height="269" key="GridCell.Tab.0.bottom" timestamp="1604138962090">
+    <state width="1878" height="269" key="GridCell.Tab.0.bottom" timestamp="1604996369176">
       <screen x="0" y="23" width="1920" height="992" />
     </state>
-    <state width="1878" height="269" key="GridCell.Tab.0.bottom/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1604138962090" />
-    <state width="1878" height="269" key="GridCell.Tab.0.center" timestamp="1604138962089">
+    <state width="1878" height="269" key="GridCell.Tab.0.bottom/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1604996369176" />
+    <state width="1878" height="269" key="GridCell.Tab.0.center" timestamp="1604996369175">
       <screen x="0" y="23" width="1920" height="992" />
     </state>
-    <state width="1878" height="269" key="GridCell.Tab.0.center/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1604138962089" />
-    <state width="1878" height="269" key="GridCell.Tab.0.left" timestamp="1604138962088">
+    <state width="1878" height="269" key="GridCell.Tab.0.center/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1604996369175" />
+    <state width="1878" height="269" key="GridCell.Tab.0.left" timestamp="1604996369174">
       <screen x="0" y="23" width="1920" height="992" />
     </state>
-    <state width="1878" height="269" key="GridCell.Tab.0.left/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1604138962088" />
-    <state width="1878" height="269" key="GridCell.Tab.0.right" timestamp="1604138962090">
+    <state width="1878" height="269" key="GridCell.Tab.0.left/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1604996369174" />
+    <state width="1878" height="269" key="GridCell.Tab.0.right" timestamp="1604996369175">
       <screen x="0" y="23" width="1920" height="992" />
     </state>
-    <state width="1878" height="269" key="GridCell.Tab.0.right/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1604138962090" />
+    <state width="1878" height="269" key="GridCell.Tab.0.right/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1604996369175" />
     <state x="469" y="158" key="SettingsEditor" timestamp="1603970842303">
       <screen x="0" y="23" width="1920" height="992" />
     </state>
     <state x="469" y="158" key="SettingsEditor/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1603970842303" />
-    <state x="560" y="246" key="Vcs.Push.Dialog.v2" timestamp="1604138203037">
+    <state x="560" y="246" key="Vcs.Push.Dialog.v2" timestamp="1604139079558">
       <screen x="0" y="23" width="1920" height="992" />
     </state>
-    <state x="560" y="246" key="Vcs.Push.Dialog.v2/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1604138203037" />
+    <state x="560" y="246" key="Vcs.Push.Dialog.v2/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1604139079558" />
     <state x="773" y="440" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603888125165">
       <screen x="0" y="23" width="1920" height="992" />
     </state>
@@ -310,5 +350,13 @@
       <screen x="0" y="23" width="1920" height="992" />
     </state>
     <state x="782" y="420" key="git4idea.remote.GitConfigureRemotesDialog/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1603972313219" />
+    <state x="625" y="239" key="run.anything.popup" timestamp="1604418855299">
+      <screen x="0" y="23" width="1920" height="992" />
+    </state>
+    <state x="625" y="239" key="run.anything.popup/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1604418855299" />
+    <state x="625" y="242" width="670" height="676" key="search.everywhere.popup" timestamp="1604410828609">
+      <screen x="0" y="23" width="1920" height="992" />
+    </state>
+    <state x="625" y="242" width="670" height="676" key="search.everywhere.popup/-1440.203.1440.877/0.23.1920.992@0.23.1920.992" timestamp="1604410828609" />
   </component>
 </project>

@@ -51,6 +51,14 @@ impl SpriteSheet {
             );
         }
     }
+
+    pub fn sprite_size(&self, name: &String) -> Option<[f64; 2]> {
+        self.find_sub_texture(name).map(|s| [s.width, s.height])
+    }
+
+    fn find_sub_texture(&self, name: &String) -> Option<&SubTexture> {
+        self.atlas.sub_textures.iter().find(|t| t.name == *name)
+    }
 }
 
 #[derive(Debug, Deserialize, PartialEq, Clone)]

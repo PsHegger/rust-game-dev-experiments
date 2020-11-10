@@ -9,6 +9,7 @@ mod utils;
 use piston_window::*;
 use std::time::SystemTime;
 use utils::game_window::GameWindow;
+use utils::input::InputHandler;
 use utils::scene::Scene;
 use utils::sprite_sheet::SpriteSheet;
 
@@ -119,6 +120,10 @@ impl Scene for SpriteAnimationApp {
         self.width = new_width;
         self.height = new_height;
     }
+}
+
+impl InputHandler for SpriteAnimationApp {
+    fn on_button_event(&mut self, _args: ButtonArgs) {}
 }
 
 fn main() {

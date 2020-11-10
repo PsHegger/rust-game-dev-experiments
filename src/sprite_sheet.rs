@@ -9,6 +9,7 @@ mod utils;
 use piston::WindowSettings;
 use piston_window::*;
 use utils::game_window::GameWindow;
+use utils::input::InputHandler;
 use utils::scene::Scene;
 use utils::sprite_sheet::SpriteSheet;
 
@@ -102,6 +103,10 @@ impl Scene for SpriteSheetApp {
         self.width = new_width;
         self.height = new_height;
     }
+}
+
+impl InputHandler for SpriteSheetApp {
+    fn on_button_event(&mut self, _args: ButtonArgs) {}
 }
 
 fn main() {

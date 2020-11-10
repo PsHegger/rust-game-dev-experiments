@@ -21,6 +21,10 @@ path = "src/sprite_sheet.rs"
 name = "sprite_animation"
 path = "src/sprite_animation.rs"
 
+[[bin]]
+name = "platformer"
+path = "src/platformer_main.rs"
+
 [dependencies]
 piston_window = "0.112.0"
 piston = "0.52.0"
